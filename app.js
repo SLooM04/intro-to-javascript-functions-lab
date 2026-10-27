@@ -24,8 +24,8 @@ console.log('Exercise 2 Result:', greetUser("Fatima", "evening")) // Good evenin
 // Exercise 3:
 // Write your function here
 
-function calculateVAT(price, vatRate) {
-  return price * (vatRate / 100)
+function calculateVAT(price, vatPercentage) {
+  return price * (vatPercentage / 100)
 }
 
 // Test your function
@@ -50,8 +50,8 @@ console.log('Exercise 4 Result:', checkStock(1))  // In stock
 
 // Exercise 5:
 // Write your function here
-function maxOFTwoNumbers(numA, numB) {
-    if(numA>numB) {
+function maxOfTwoNumbers(numA, numB) {
+    if (numA >= numB) {
         return numA
     } else {
         return numB
@@ -59,9 +59,9 @@ function maxOFTwoNumbers(numA, numB) {
 }
 
 // Test your function
-console.log('Exercise 5 Result:', maxOFTwoNumbers(10, 20)) // 20
-console.log('Exercise 5 Result:', maxOFTwoNumbers(30, 15)) // 30
-console.log('Exercise 5 Result:', maxOFTwoNumbers(5, 5))   // 5
+console.log('Exercise 5 Result:', maxOfTwoNumbers(3, 9))  // 9
+console.log('Exercise 5 Result:', maxOfTwoNumbers(15, 4)) // 15
+console.log('Exercise 5 Result:', maxOfTwoNumbers(7, 7))  // 7
 
 // Exercise 6:
 // Write your function here
@@ -82,14 +82,13 @@ console.log('Exercise 6 Result:', isCharAVowel("y")) // false
 
 // Exercise 7:
 // Write your function here
-function maxOfThree(numA,numB,numC) {
-    if(numA>numB && numA>numC) {
+// Exercise 7:
+function maxOfThree(numA, numB, numC) {
+    if (numA >= numB && numA >= numC) {
         return numA
-    }
-    else if(numB>numA && numB>numC) {
+    } else if (numB >= numA && numB >= numC) {
         return numB
-    }
-    else {
+    } else {
         return numC
     }
 }
